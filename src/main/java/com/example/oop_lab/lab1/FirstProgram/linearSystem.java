@@ -1,6 +1,11 @@
 package com.example.oop_lab.lab1.FirstProgram;
 
 
+/**
+ * 2.2.6 : a11 x1 + a12 x2 = b1
+ *         a21 x1 + a22 x2 = b2
+ */
+
 import java.util.Scanner;
 
 public class linearSystem {
