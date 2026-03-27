@@ -1,0 +1,13 @@
+/**
+ * 2.2.1
+ */
+
+
+
+package com.example.oop_lab.lab1.FirstProgram;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
