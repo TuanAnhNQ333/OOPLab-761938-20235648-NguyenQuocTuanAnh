@@ -1,0 +1,14 @@
+Questions:
+- What happens if users choose “Cancel”?
+- How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do”
+and “I don’t” (Suggestion: Use Javadocs or using Eclipse/Netbean IDE help).
+
+Answers:
+- If users choose "Cancel", the method will return a value of 2, which indicates
+    that the user has canceled the operation. This allows the program to handle the cancellation appropriately, such as by exiting the dialog or performing a specific action based on the user's choice.
+- To customize the options for users, you can use the `showOptionDialog` method of the `JOptionPane` class. This method allows you to specify the options that will be displayed to the user. For example, you can create an array of options like `String[] options = {"Yes", "No"};` and then pass this array as a parameter to the `showOptionDialog` method. This way, only the specified options will be presented to the user, and they can choose from those options instead of the default ones.
+```javaString[] options = {"Yes", "No"};
+int choice = JOptionPane.showOptionDialog(null, "Do you want to proceed?", "Custom Options",
+        JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+```In this example, the user will see a dialog with "Yes" and "No" options, and the `choice` variable will capture the user's selection, allowing you to handle it accordingly in your program.
+```
