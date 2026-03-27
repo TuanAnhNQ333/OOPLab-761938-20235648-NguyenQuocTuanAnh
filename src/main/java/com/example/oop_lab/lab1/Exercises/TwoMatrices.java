@@ -1,3 +1,9 @@
+/**
+ * 6.6 Write a Java program to add two matrices of the same size.
+ * Note: You must create a new Java project for this exercise.
+ * - The matrices can be entered by the user or constants.
+ */
+
 package com.example.oop_lab.lab1.Exercises;
 
 import java.util.Scanner;

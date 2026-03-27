@@ -1,3 +1,7 @@
+/**
+ * 6.1
+ */
+
 package com.example.oop_lab.lab1.Exercises;
 
 import javax.swing.JOptionPane;

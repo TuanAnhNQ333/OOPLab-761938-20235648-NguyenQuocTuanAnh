@@ -1,3 +1,7 @@
+/**
+ * 2.2.2
+ */
+
 package com.example.oop_lab.lab1.FirstProgram;
 
 import javax.swing.*;

@@ -1,3 +1,7 @@
+/**
+ * 6.2
+ */
+
 package com.example.oop_lab.lab1.Exercises;
 
 import java.util.Scanner;
