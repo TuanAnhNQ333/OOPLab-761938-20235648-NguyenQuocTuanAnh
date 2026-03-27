@@ -7,6 +7,37 @@ This repository contains lab assignments organized by lab folders.
 ## Project Structure 
 
 ```
+<details>
+<summary><b>lab1</b></summary>
+
+<br>
+
+<details>
+<summary>Exercises</summary>
+
+- ArrayOperations.java
+- ChoosingOption.java
+- DaysInMonth.java
+- InputFromKeyboard.java
+- Triangle.java
+- TwoMatrices.java
+
+</details>
+
+<details>
+<summary>FirstProgram</summary>
+
+- calculate.java
+- FirstDialog.java
+- HelloNameDialog.java
+- HelloWorld.java
+- RealRoot.java
+- ShowTwoNumbers.java
+
+</details>
+
+</details>
+
 OOP_LAB
 ├── src
 │   └── main
