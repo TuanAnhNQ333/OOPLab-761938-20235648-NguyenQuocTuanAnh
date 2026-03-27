@@ -1,4 +1,6 @@
 /**
+ *
+ * 6.5
  * Write a Java program to sort a numeric array, and calculate the sum and average value of
  * array elements.
  */
