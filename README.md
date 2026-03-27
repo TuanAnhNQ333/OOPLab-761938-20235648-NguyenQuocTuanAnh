@@ -4,7 +4,7 @@ Java Object-Oriented Programming Lab Exercises.
 
 This repository contains lab assignments organized by lab folders.
 
-## Project Structure
+## Project Structure 
 
 ```
 OOP_LAB
@@ -15,20 +15,6 @@ OOP_LAB
 │       │       └── example
 │       │           └── oop_lab
 │       │               ├── lab1
-│       │               │   ├── Exercises
-│       │               │   │   ├── ArrayOperations.java
-│       │               │   │   ├── ChoosingOption.java
-│       │               │   │   ├── DaysInMonth.java
-│       │               │   │   ├── InputFromKeyboard.java
-│       │               │   │   ├── Triangle.java
-│       │               │   │   └── TwoMatrices.java
-│       │               │   └── FirstProgram
-│       │               │       ├── calculate.java
-│       │               │       ├── FirstDialog.java
-│       │               │       ├── HelloNameDialog.java
-│       │               │       ├── HelloWorld.java
-│       │               │       ├── RealRoot.java
-│       │               │       └── ShowTwoNumbers.java
 │       │               ├── lab2
 │       │               ├── lab3
 │       │               ├── lab4
