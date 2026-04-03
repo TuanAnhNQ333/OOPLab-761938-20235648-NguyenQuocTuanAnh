@@ -16,7 +16,7 @@ public class Aims {
         anOrder.addDigitalVideoDisc(dvd2);
 
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin",
-                "Animation",null,0,  18.99f);
+                "Animation",null, 0,  18.99f);
         anOrder.addDigitalVideoDisc(dvd3);
 
         anOrder.printCart();

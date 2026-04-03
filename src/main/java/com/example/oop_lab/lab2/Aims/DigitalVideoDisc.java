@@ -12,6 +12,7 @@ public class DigitalVideoDisc {
     private int length;
     private float cost;
 
+    // getters & setters
     public String getTitle() {
         return title;
     }
@@ -51,8 +52,17 @@ public class DigitalVideoDisc {
     public void setCost(float cost) {
         this.cost = cost;
     }
-
-        public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+    // constructors :
+    public DigitalVideoDisc(String title) {
+        this(title, null, null, 0, 0.0f);
+    }
+    public DigitalVideoDisc(String title, String category, float cost) {
+        this(title, category, null, 0, cost);
+    }
+    public DigitalVideoDisc(String title, String category, String director, float cost) {
+        this(title, category, director, 0, cost);
+    }
+    public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
             this.title = title;
             this.category = category;
             this.director = director;
@@ -60,15 +70,4 @@ public class DigitalVideoDisc {
             this.cost = cost;
         }
 
-        public DigitalVideoDisc(String title) {
-            this(title, null, null, 0, 0.0f);
-        }
-
-        public DigitalVideoDisc(String title, String category, float cost) {
-            this(title, category, null, 0, cost);
-        }
-
-        public DigitalVideoDisc(String director, String category, String title, float cost) {
-            this(title, category, director, 0, cost);
-        }
 }
