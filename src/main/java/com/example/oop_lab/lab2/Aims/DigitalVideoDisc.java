@@ -12,6 +12,17 @@ public class DigitalVideoDisc {
     private int length;
     private float cost;
 
+    private static int nbDigitalVideoDiscs = 0;
+
+
+    private int id;
+    public int getId() {
+        return id;
+    }
+    public static int getNbDigitalVideoDiscs() {
+        return nbDigitalVideoDiscs;
+    }
+
     // getters & setters
     public String getTitle() {
         return title;
@@ -68,6 +79,10 @@ public class DigitalVideoDisc {
             this.director = director;
             this.length = length;
             this.cost = cost;
+
+            nbDigitalVideoDiscs++;
+            this.id = nbDigitalVideoDiscs;
         }
+
 
 }
