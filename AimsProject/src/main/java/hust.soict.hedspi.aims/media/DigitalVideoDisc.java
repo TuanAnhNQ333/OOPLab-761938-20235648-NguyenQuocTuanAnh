@@ -1,45 +1,23 @@
-package hust.soict.hedspi.aims.disc;
+package hust.soict.hedspi.aims.media;
 
 
-public class DigitalVideoDisc {
+public class DigitalVideoDisc extends Media{
     /**
      * tittle, category, director,
      * int length
      * float cost
      */
-    private String title;
-    private String category;
+
     private String director;
     private int length;
-    private float cost;
 
     private static int nbDigitalVideoDiscs = 0;
 
-
-    private int id;
-    public int getId() {
-        return id;
-    }
     public static int getNbDigitalVideoDiscs() {
         return nbDigitalVideoDiscs;
     }
 
     // getters & setters
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
 
     public String getDirector() {
         return director;
@@ -57,13 +35,7 @@ public class DigitalVideoDisc {
         this.length = length;
     }
 
-    public float getCost() {
-        return cost;
-    }
 
-    public void setCost(float cost) {
-        this.cost = cost;
-    }
     // constructors :
     public DigitalVideoDisc(String title) {
         this(title, null, null, 0, 0.0f);
@@ -77,24 +49,19 @@ public class DigitalVideoDisc {
 
     @Override
     public String toString() {
-        return "DVD - " + title + " - " + category + " - "
-                + director + " - " + length + ": " + cost + " $";
+        return "DVD - " + getTitle() + " - " + getCategory() + " - "
+                + director + " - " + length + ": " + getCost() + " $";
     }
 
     public boolean isMatch(String title) {
-        if (this.title == null) return false;
-        return this.title.toLowerCase().contains(title.toLowerCase());
+        if (getTitle() == null) return false;
+        return getTitle().toLowerCase().contains(title.toLowerCase());
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
-            this.title = title;
-            this.category = category;
-            this.director = director;
-            this.length = length;
-            this.cost = cost;
-
-            nbDigitalVideoDiscs++;
-            this.id = nbDigitalVideoDiscs;
+        super(++nbDigitalVideoDiscs, title, category, cost);
+        this.director = director;
+        this.length = length;
     }
 
 
