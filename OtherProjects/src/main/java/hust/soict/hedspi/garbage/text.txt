@@ -1,0 +1,13 @@
+/Users/macbook/Library/Java/JavaVirtualMachines/openjdk-24.0.1/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52095 -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/macbook/Documents/tai_lieu/2025.2/oop/OOP_LAB/target/classes:/Users/macbook/.m2/repository/org/openjfx/javafx-controls/17.0.6/javafx-controls-17.0.6.jar:/Users/macbook/.m2/repository/org/openjfx/javafx-fxml/17.0.6/javafx-fxml-17.0.6.jar hust.soict.hedspi.garbage.GarbageCreator
+Exception in thread "main" java.nio.file.NoSuchFileException: test.exe
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:213)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:244)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:357)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:399)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:2970)
+	at hust.soict.hedspi.garbage.GarbageCreator.main(GarbageCreator.java:16)
+
+Process finished with exit code 1
