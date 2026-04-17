@@ -42,4 +42,9 @@ public abstract class Media {
     public String toString() {
         return title + " - " + category + " - " + cost + " $";
     }
+
+    public boolean isMatch(String title) {
+        if (getTitle() == null) return false;
+        return getTitle().toLowerCase().contains(title.toLowerCase());
+    }
 }
