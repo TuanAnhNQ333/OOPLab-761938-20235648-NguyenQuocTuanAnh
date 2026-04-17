@@ -1,40 +1,25 @@
 package hust.soict.hedspi.aims.store;
 
-import hust.soict.hedspi.aims.disc.DigitalVideoDisc;
+import hust.soict.hedspi.aims.media.Media;
+import java.util.ArrayList;
 
 public class Store {
     public static final int MAX_NUMBERS_ORDER = 20;
-    private DigitalVideoDisc itemsInStore[] = new DigitalVideoDisc[MAX_NUMBERS_ORDER];
+    private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
     private int qtyOrdered = 0;
 
-    public void addDVD(DigitalVideoDisc disc) {
-        if(qtyOrdered >= MAX_NUMBERS_ORDER) {
+    public void addMedia(Media media) {
+        if(itemsOrdered.size() >= MAX_NUMBERS_ORDER){
             System.out.println("The cart is almost full");
-            return;
         }
-
-        itemsInStore[qtyOrdered] = disc;
-        qtyOrdered++;
-        System.out.println("The disc has been added");
+        itemsOrdered.add(media);
+        System.out.println("The media has been added");
     }
-    public void removeDVD(DigitalVideoDisc disc) {
-        int index = -1;
-        for(int i = 0; i < qtyOrdered; i ++) {
-            if(itemsInStore[i] == disc) {
-                index = i;
-                break;
-            }
+    public void removeMedia(Media media) {
+        if(itemsOrdered.remove(media)) {
+            System.out.println("The media has been deleted");
+        } else {
+            System.out.println("The media was not found");
         }
-        if(index == -1) {
-            System.out.println("The disc was not found");
-            return;
-        }
-        for(int i = index; i < qtyOrdered - 1; i ++) {
-            itemsInStore[i] = itemsInStore[i + 1];
-        }
-        itemsInStore[qtyOrdered - 1] = null;
-        qtyOrdered--;
-
-        System.out.println("The disc has been removed");
     }
 }
