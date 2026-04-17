@@ -1,15 +1,15 @@
 package hust.soict.hedspi.aims.media;
 
 
-public class DigitalVideoDisc extends Media{
+public class DigitalVideoDisc extends Disc {
     /**
      * tittle, category, director,
      * int length
      * float cost
      */
-
-    private String director;
     private int length;
+    private String director;
+
 
     private static int nbDigitalVideoDiscs = 0;
 
@@ -18,22 +18,21 @@ public class DigitalVideoDisc extends Media{
     }
 
     // getters & setters
+    public int getLength() {
+        return length;
+    }
+    public void setLength(int length) {
+        this.length = length;
+    }
 
     public String getDirector() {
         return director;
     }
-
     public void setDirector(String director) {
         this.director = director;
     }
 
-    public int getLength() {
-        return length;
-    }
 
-    public void setLength(int length) {
-        this.length = length;
-    }
 
 
     // constructors :
