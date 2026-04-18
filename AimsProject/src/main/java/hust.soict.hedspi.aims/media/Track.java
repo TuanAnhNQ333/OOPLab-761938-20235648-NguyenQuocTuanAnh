@@ -1,7 +1,7 @@
 package hust.soict.hedspi.aims.media;
 
 public class Track {
-    private String title;
+    protected String title;
     private int length;
 
     public Track(String title, int length) {
@@ -29,6 +29,7 @@ public class Track {
     public String toString() {
         return title + " (" + length + ")";
     }
+
 
     public void play() {
         System.out.println("Playing DVD: " + title);

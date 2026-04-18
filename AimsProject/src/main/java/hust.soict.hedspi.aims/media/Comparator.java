@@ -1,4 +1,5 @@
 package hust.soict.hedspi.aims.media;
 
-public interface Comparator {
+public interface Comparator<M> {
+    void sort();
 }
