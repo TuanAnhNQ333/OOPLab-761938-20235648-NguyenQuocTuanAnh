@@ -16,9 +16,7 @@ public class CartTest {
         cart.addMedia(dvd3);
 
         cart.printCart();
-
         cart.searchByTitle("star");
-
         cart.searchById(2);
 
 

@@ -1,7 +1,10 @@
 package hust.soict.hedspi.aims.cart;
 
 import java.util.ArrayList;
+import java.util.Collections;
+
 import hust.soict.hedspi.aims.media.Media;
+import hust.soict.hedspi.aims.media.MediaComparatorByTitleCost;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDER = 20;
@@ -60,6 +63,14 @@ public class Cart {
             System.out.println("No DVD found with title: " + title);
         }
     }
+    // sort by TITLE then COST
+    public void sortByTitleCost() {
+        Collections.sort(itemsOrdered, Media.COMPARE_BY_TITLE_COST);
+    }
+    // sort by COST then TITLE
+    public void sortByCostTitle() {
+        Collections.sort(itemsOrdered, Media.COMPARE_BY_COST_TITLE);
+    }
     public void printCart() {
         System.out.println("***********************CART***********************");
         System.out.println("Ordered Items:");
@@ -70,5 +81,17 @@ public class Cart {
 
         System.out.printf("Total cost: %.2f $\n", totalCost());
         System.out.println("***************************************************");
+    }
+
+    public void filterByTitle(String t) {
+    }
+
+    public void removeByTitle(String r) {
+    }
+
+    public void playMedia(String p) {
+    }
+
+    public void clear() {
     }
 }
