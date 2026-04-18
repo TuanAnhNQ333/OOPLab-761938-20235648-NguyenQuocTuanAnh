@@ -1,0 +1,23 @@
+LAB 03 - ANSWERS
+
+1. Advantages of Polymorphism:
+   Polymorphism allows objects of different classes to be treated as objects of a common superclass. It improves code flexibility and reusability. It also makes the system easier to extend, because new classes can be added without changing existing code. Additionally, it helps reduce complexity by allowing a single interface to represent different behaviors.
+
+2. How is Inheritance useful to achieve Polymorphism in Java?
+   Inheritance allows a subclass to inherit properties and methods from a superclass. Through inheritance, different subclasses can override the same method (e.g., toString(), play()). When using a superclass reference (e.g., Media), Java can dynamically call the correct method based on the actual object type. This is called runtime polymorphism.
+
+3. Differences between Polymorphism and Inheritance:
+   Inheritance is a mechanism where one class acquires the properties and behaviors of another class. It defines a relationship between classes (parent-child).
+   Polymorphism is the ability of an object to take many forms. It allows methods to behave differently based on the object that calls them.
+   In short, inheritance is about structure (class hierarchy), while polymorphism is about behavior (method execution).
+
+4. Polymorphism with toString():
+   When iterating through an ArrayList of Media and calling toString(), the method that gets executed depends on the actual type of object (Book, DVD, CD). This is because each subclass overrides the toString() method. This demonstrates runtime polymorphism, where the method call is resolved during execution.
+
+5. Comparable vs Comparator:
+
+* If using Comparable, the Media class should implement Comparable<Media>.
+* The compareTo() method should define a default ordering, for example by title then cost.
+* However, Comparable only allows one natural ordering.
+* Therefore, we cannot easily have two different sorting rules (title-cost and cost-title) using Comparable alone.
+* If DVDs have a different sorting rule, we should use Comparator instead, or override compareTo() in subclasses (but this is not flexible).
