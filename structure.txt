@@ -1,0 +1,191 @@
+.
+├── AimsProject
+│   ├── Design
+│   │   ├── Class Diagram.asta
+│   │   ├── Class Diagram.png
+│   │   ├── Class_Diagram.png
+│   │   ├── UseCaseDiagram.asta
+│   │   └── UseCaseDiagram.png
+│   ├── Reading Assignment
+│   │   ├── READING ASSIGNMENT.docx
+│   │   └── READING_ASSIGNMENT.pdf
+│   ├── Requirement
+│   │   ├── REQUIREMENT.docx
+│   │   └── REQUIREMENT_20235648.pdf
+│   ├── answer.txt
+│   └── src
+│       └── main
+│           └── java
+│               └── hust.soict.hedspi.aims
+│                   ├── Aims.java
+│                   ├── cart
+│                   │   ├── Cart.java
+│                   │   └── CartTest.java
+│                   ├── disc
+│                   │   └── TestPassingParameter.java
+│                   ├── media
+│                   │   ├── Book.java
+│                   │   ├── CompactDisc.java
+│                   │   ├── Comparator.java
+│                   │   ├── DigitalVideoDisc.java
+│                   │   ├── Disc.java
+│                   │   ├── Media.java
+│                   │   ├── MediaComparatorByCostTitle.java
+│                   │   ├── MediaComparatorByTitleCost.java
+│                   │   ├── MediaTest.java
+│                   │   ├── Playable.java
+│                   │   └── Track.java
+│                   └── store
+│                       ├── Store.java
+│                       └── StoreTest.java
+├── OOP_LAB.iml
+├── OtherProjects
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── hust
+│           │       └── soict
+│           │           └── hedspi
+│           │               ├── garbage
+│           │               │   ├── ConcatenationInLoops.java
+│           │               │   ├── GarbageCreator.java
+│           │               │   ├── NoGarbage.java
+│           │               │   └── text.txt
+│           │               ├── lab1
+│           │               │   ├── Exercises
+│           │               │   │   ├── 6.1.txt
+│           │               │   │   ├── ArrayOperations.java
+│           │               │   │   ├── ChoosingOption.java
+│           │               │   │   ├── DaysInMonth.java
+│           │               │   │   ├── InputFromKeyboard.java
+│           │               │   │   ├── Triangle.java
+│           │               │   │   └── TwoMatrices.java
+│           │               │   └── FirstProgram
+│           │               │       ├── FirstDialog.java
+│           │               │       ├── HelloNameDialog.java
+│           │               │       ├── HelloWorld.java
+│           │               │       ├── ShowTwoNumbers.java
+│           │               │       ├── calculate.java
+│           │               │       ├── linearSystem.java
+│           │               │       ├── solveLinear.java
+│           │               │       └── twoEquation.java
+│           │               ├── lab2
+│           │               │   └── Aims
+│           │               │       ├── Aims.java
+│           │               │       ├── Cart.java
+│           │               │       ├── Class Diagram.asta
+│           │               │       ├── Class Diagram.png
+│           │               │       ├── Class_Diagram.png
+│           │               │       ├── DigitalVideoDisc.java
+│           │               │       ├── TestPassingParameter.java
+│           │               │       ├── UseCaseDiagram.asta
+│           │               │       ├── UseCaseDiagram.png
+│           │               │       └── answer.txt
+│           │               ├── lab3
+│           │               │   ├── Aims.java
+│           │               │   ├── Cart.java
+│           │               │   ├── Class Diagram.asta
+│           │               │   ├── Class Diagram.png
+│           │               │   ├── Class_Diagram.png
+│           │               │   ├── DigitalVideoDisc.java
+│           │               │   ├── TestPassingParameter.java
+│           │               │   ├── UseCaseDiagram.asta
+│           │               │   └── UseCaseDiagram.png
+│           │               ├── lab4
+│           │               └── lab5
+│           └── resources
+│               └── com
+│                   └── example
+│                       └── oop_lab
+│                           └── hello-view.fxml
+├── README.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── structure.txt
+├── target
+│   ├── OOP_LAB-1.0-SNAPSHOT.jar
+│   ├── classes
+│   │   └── hust
+│   │       └── soict
+│   │           └── hedspi
+│   │               ├── aims
+│   │               │   ├── Aims.class
+│   │               │   ├── cart
+│   │               │   │   ├── Cart.class
+│   │               │   │   └── CartTest.class
+│   │               │   ├── disc
+│   │               │   │   └── TestPassingParameter.class
+│   │               │   ├── media
+│   │               │   │   ├── Book.class
+│   │               │   │   ├── CompactDisc.class
+│   │               │   │   ├── Comparator.class
+│   │               │   │   ├── DigitalVideoDisc.class
+│   │               │   │   ├── Disc.class
+│   │               │   │   ├── Media.class
+│   │               │   │   ├── MediaComparatorByCostTitle.class
+│   │               │   │   ├── MediaComparatorByTitleCost.class
+│   │               │   │   ├── MediaTest.class
+│   │               │   │   ├── Playable.class
+│   │               │   │   └── Track.class
+│   │               │   └── store
+│   │               │       ├── Store.class
+│   │               │       └── StoreTest.class
+│   │               ├── garbage
+│   │               │   ├── ConcatenationInLoops.class
+│   │               │   ├── GarbageCreator.class
+│   │               │   ├── NoGarbage.class
+│   │               │   └── text.txt
+│   │               ├── lab1
+│   │               │   ├── Exercises
+│   │               │   │   ├── 6.1.txt
+│   │               │   │   ├── ArrayOperations.class
+│   │               │   │   ├── ChoosingOption.class
+│   │               │   │   ├── DaysInMonth.class
+│   │               │   │   ├── InputFromKeyboard.class
+│   │               │   │   ├── Triangle.class
+│   │               │   │   └── TwoMatrices.class
+│   │               │   └── FirstProgram
+│   │               │       ├── FirstDialog.class
+│   │               │       ├── HelloNameDialog.class
+│   │               │       ├── HelloWorld.class
+│   │               │       ├── ShowTwoNumbers.class
+│   │               │       ├── calculate.class
+│   │               │       ├── linearSystem.class
+│   │               │       ├── solveLinear.class
+│   │               │       └── twoEquation.class
+│   │               ├── lab2
+│   │               │   └── Aims
+│   │               │       ├── Aims.class
+│   │               │       ├── Cart.class
+│   │               │       ├── Class Diagram.asta
+│   │               │       ├── Class Diagram.png
+│   │               │       ├── Class_Diagram.png
+│   │               │       ├── DigitalVideoDisc.class
+│   │               │       ├── TestPassingParameter.class
+│   │               │       ├── UseCaseDiagram.asta
+│   │               │       ├── UseCaseDiagram.png
+│   │               │       └── answer.txt
+│   │               └── lab3
+│   │                   ├── Aims.class
+│   │                   ├── Cart.class
+│   │                   ├── Class Diagram.asta
+│   │                   ├── Class Diagram.png
+│   │                   ├── Class_Diagram.png
+│   │                   ├── DigitalVideoDisc.class
+│   │                   ├── TestPassingParameter.class
+│   │                   ├── UseCaseDiagram.asta
+│   │                   └── UseCaseDiagram.png
+│   ├── generated-sources
+│   │   └── annotations
+│   ├── maven-archiver
+│   │   └── pom.properties
+│   └── maven-status
+│       └── maven-compiler-plugin
+│           └── compile
+│               └── default-compile
+│                   ├── createdFiles.lst
+│                   └── inputFiles.lst
+└── test.txt
+
+57 directories, 132 files
